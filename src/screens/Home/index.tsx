@@ -18,7 +18,7 @@ export  function Home(){
 
     setParticipants(prevState => [...prevState, participantName]);
     setParticipantName('');
-    console.log(participants);
+    
   }
   function handleParticipantRemove(name: string) {
     Alert.alert("Remover",`Remover o participante ${name} ?`, [
@@ -37,6 +37,7 @@ export  function Home(){
       }
     ]);
   }
+
   return (
     <View style={styles.container}>
         <Text style={styles.eventName}> 
@@ -44,7 +45,7 @@ export  function Home(){
         </Text>
 
         <Text style={styles.eventDate}> 
-          Sexta, 4 de Novembro de 2022.
+          Terça, 21 de Fevereiro de 2023.
         </Text>
 
         <View style={styles.form}>
